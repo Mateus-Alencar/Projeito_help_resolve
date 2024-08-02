@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suporte para Agentes</title>
+    <link rel="stylesheet" href="css_add_args.css">
+    <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet">
+    <link href="styleIndex.css" rel="stylesheet" />
+    
+</head>
+<body >
+    <header>
+        <div class="logo">
+            <img class="img_logo" src="help.png">
+        </div>
+        <nav>
+            <div class="linha-vertical"></div>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="#">METAS</a></li>
+                <li><a href="#">DICAS</a></li>
+                <li><a href="#">TREINAMENTO</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main style="margin-bottom: 30px;">
+        <aside>
+            <h2 id="titulo_aside">Classificação</h2>
+            <div style="text-align: center;">
+                
+                <div class="select-menu" >
+                    <div class="select-btn">
+                        <span class="sBtn-text">Tipo de Cliente</span>
+                        <i class="bx bx-chevron-down"></i>
+                    </div>
+                    <ul class="options">
+                        <li class="option">
+                            <i>
+                                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1em' height='1em' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10s10-4.486 10-10S17.514 2 12 2m0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8s8 3.589 8 8s-3.589 8-8 8'/%3E%3Cpath fill='%23000' d='M12 14c-3 0-4 3-4 3h8s-1-3-4-3m-2.439-2.439c.014-.014.023-.03.037-.044l1.031.413l.742-1.857l-5-2l-.742 1.856l1.373.549L7 10.5a1.499 1.499 0 0 0 2.561 1.061m3.068-1.49l.742 1.857l1.037-.415c.011.011.019.024.029.035a1.488 1.488 0 0 0 2.112 0c.271-.271.438-.644.438-1.056l-.001-.01l1.386-.554l-.742-1.857z'/%3E%3C/svg%3E">
+                            </i>
+                            <span class="option-text">  Cliente Crítico</span>
+                        </li>
+                        <li class="option">
+                            <i>
+                                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1em' height='1em' viewBox='0 0 24 24'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cpath d='M24 0v24H0V0zM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036q-.016-.004-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.016-.018m.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092q.019.005.029-.008l.004-.014l-.034-.614q-.005-.018-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01z'/%3E%3Cpath fill='%23000' d='M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12S6.477 2 12 2m0 2a8 8 0 1 0 0 16a8 8 0 0 0 0-16m0 9c1.267 0 2.427.473 3.308 1.25a1 1 0 1 1-1.324 1.5A3 3 0 0 0 12 15c-.761 0-1.455.282-1.984.75a1 1 0 1 1-1.323-1.5A5 5 0 0 1 12 13M8.5 8a1.5 1.5 0 1 1 0 3a1.5 1.5 0 0 1 0-3m7 0a1.5 1.5 0 1 1 0 3a1.5 1.5 0 0 1 0-3'/%3E%3C/g%3E%3C/svg%3E">
+                            </i>
+                            <span class="option-text">  Cliente Triste</span>
+                        </li>
+                        <li class="option">
+                            <i>
+                                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1em' height='1em' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10s10-4.486 10-10S17.514 2 12 2m0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8s8 3.589 8 8s-3.589 8-8 8'/%3E%3Cpath fill='%23000' d='M14 10h4v2h-4zm-6.026 5H16v2H7.974zM6 10h4v2H6z'/%3E%3C/svg%3E">
+                            </i>
+                            <span class="option-text">  Cliente Neutro</span>
+                        </li>
+                    </ul>
+                </div>
+                
+
+                <div class="select-menu2" >
+                    <div class="select-btn2">
+                        <span class="sBtn-text2">Situações</span>
+                        <i class="bx bx-chevron-down"></i>
+                    </div>
+                    <ul class="options2">
+                        <li class="option2">
+                            <span class="option-text2">Consta entrega</span>
+                        </li>
+                        <li class="option2">
+                            <span class="option-text2">Entrega atrasada</span>
+                        </li>
+                        <li class="option2">
+                            <span class="option-text2">Fora do prazo 0</span>
+                        </li>
+                        <li class="option2">
+                            <span class="option-text2">Prazo de cancelamento</span>
+                        </li>
+                        <li class="option2">
+                            <span class="option-text2">Não recebeu restituição</span>
+                        </li>
+                        <li class="option2">
+                            <span class="option-text2">Insucesso de entrega</span>
+                        </li>
+                        <li class="option2">
+                            <span class="option-text2">Em rota de devolução</span>
+                        </li>
+                        <li class="option2">
+                            <span class="option-text2">Cancelamento c/ NF emitida</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                
+                <div class="select-menu3" >
+                    <div class="select-btn3">
+                        <span class="sBtn-text3">Repertório</span>
+                        <i class="bx bx-chevron-down"></i>
+                    </div>
+                    <ul class="options3">
+                        <li class="option3">
+                            <span class="option-text3">Pouco Vocabulário</span>
+                        </li>
+                        <li class="option3">
+                            <span class="option-text3">Muito Vocabulário</span>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </aside>
+        <section>
+            <div class="classificacao_selecionada">
+                <div>
+                    <label id="1_tipo">Tipo de cliente:</label>
+                    <label id="2_siti"> Situação:</label>
+                    <label id="3_rep"> Repertório:</label>
+                </div>
+                <div class="form_">
+                    <input type="search" id="busca" name="q">
+                    <button id="Carregar_args_id" class="carregar_args" onclick="carregarArgumentacao()">OK</button>
+                </div>
+                
+            </div>
+            <div id="block-arg1">
+                <h2>Argumentação Primária</h2>
+                <div id="situacao-detalhes-arg1">
+                    <textarea id="arg_primaria">Argumentação</textarea>
+                </div>
+            </div>
+            <div id="block-arg2">
+                <h2>Processos Internos</h2>
+                <div id="situacao-detalhes-arg1">
+                    <textarea id="proc_internos">Argumentação</textarea>
+                </div>
+            </div>
+            <div id="block-arg3">
+                <h2>Pedido de desculpas</h2>
+                <div id="situacao-detalhes-arg1">
+                    <textarea id="pedido_desculpas">Argumentação</textarea>
+                </div>
+            </div>
+            <div id="block-arg4">
+                <h2>Cortes de falas</h2>
+                <div id="situacao-detalhes-arg1">
+                    <textarea id="cortes_falas">Argumentação</textarea>
+                </div>
+            </div>
+            <div id="block-arg5">
+                <h2>Argumentação para encerramento</h2>
+                <div id="situacao-detalhes-arg1">
+                    <textarea id="arg_encerramento">Argumentação</textarea>
+                </div>
+            </div>
+            <div id="block-arg6">
+                <h2>Scripts para finalizar o atendimento</h2>
+                <div id="situacao-detalhes-arg1">
+                    <textarea id="scripts_finalizacao">Argumentação</textarea>
+                </div>
+            </div>
+            <div style="text-align: center;">
+                <button id="Salvar_args" class="custom-btn btn-3">
+                    <span>Salvar</span>
+                </button>
+                <button style="display: none;" id="Modificar_args" class="custom-btn btn-3">
+                    <span>Modificar</span>
+                </button>
+            </div>
+
+        </section>
+        
+    </main>
+    <footer class="bg-dark py-4 mt-auto">
+            <div class="container px-5">
+                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                    <div class="col-auto"><div class="small m-0 text-white">RELP RESOLVE</div></div>
+                    <div class="col-auto">
+                        <span class="text-white mx-1">&middot;</span>
+                        <a class="link-light small" href="#!">Versão: 1.0.0</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    <script src="script_select_criticidade.js"></script>
+    <script>
+        let tipo_de_cliente_btm = document.querySelector('.sBtn-text');
+        let tipo_de_situacao_btm = document.querySelector('.sBtn-text2');
+        let tipo_de_vocabulario_btm = document.querySelector('.sBtn-text3');
+        
+        document.getElementById('Salvar_args').addEventListener('click', function (e) {
+    e.preventDefault();
+
+    const data = {
+        tipo_cliente: tipo_de_cliente_btm.textContent,
+        situacao: tipo_de_situacao_btm.textContent,
+        repertorio: tipo_de_vocabulario_btm.textContent,
+        arg_primaria: document.getElementById('arg_primaria').value,
+        proc_internos: document.getElementById('proc_internos').value,
+        pedido_desculpas: document.getElementById('pedido_desculpas').value,
+        cortes_falas: document.getElementById('cortes_falas').value,
+        arg_encerramento: document.getElementById('arg_encerramento').value,
+        scripts_finalizacao: document.getElementById('scripts_finalizacao').value
+    };
+    let tc = false;
+    let ts = false;
+    let tv = false;
+
+    if (tipo_de_cliente_btm.textContent === "Tipo de Cliente") {
+        tipo_de_cliente_background.style.backgroundColor = 'red';
+    } else {
+        tipo_de_cliente_background.style.backgroundColor = '#c9c8c8';
+        tc = true;
+    }
+
+    if (tipo_de_situacao_btm.textContent === "Situações") {
+        tipo_de_situacao_background.style.backgroundColor = 'red';
+    } else {
+        tipo_de_situacao_background.style.backgroundColor = '#c9c8c8';
+        ts = true;
+    }
+
+    if (tipo_de_vocabulario_btm.textContent === "Repertório") {
+        tipo_de_vocabulario_background.style.backgroundColor = 'red';
+    } else {
+        tipo_de_vocabulario_background.style.backgroundColor = '#c9c8c8';
+        tv = true;
+    }
+
+    if (tc && ts && tv) {
+        fetch('salvar_dados.php', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
+        })
+        .then(response => response.json())
+        .then(result => {
+            if (result.status === 'success') {
+                alert('Dados salvos com sucesso!');
+                // Limpar todos os textarea
+                document.getElementById('arg_primaria').value = '';
+                document.getElementById('proc_internos').value = '';
+                document.getElementById('pedido_desculpas').value = '';
+                document.getElementById('cortes_falas').value = '';
+                document.getElementById('arg_encerramento').value = '';
+                document.getElementById('scripts_finalizacao').value = '';
+            } else {
+                alert('Erro ao salvar dados: ' + result.message);
+            }
+        })
+        .catch(error => alert('Erro: ' + error.message));
+    }
+    });
+
+
+    document.getElementById('Carregar_args_id').addEventListener('click', function() {
+    carregarArgumentacao();
+});
+
+function carregarArgumentacao() {
+    const id = parseInt(document.getElementById('busca').value, 10);
+    if (isNaN(id)) {
+        alert('Por favor, insira um ID válido.');
+        document.getElementById('Modificar_args').style.display = "none";
+                document.getElementById('arg_primaria').value = '';
+                document.getElementById('proc_internos').value = '';
+                document.getElementById('pedido_desculpas').value = '';
+                document.getElementById('cortes_falas').value = '';
+                document.getElementById('arg_encerramento').value = '';
+                document.getElementById('scripts_finalizacao').value = '';        
+        document.getElementById('Salvar_args').style.display = "block";
+        return;
+    }
+
+    fetch(`http://localhost/Projeto%20HELP%20RESOLVE/carregar_argumentacao.php?id_argumento=${id}`)
+    .then(response => response.json())
+        .then(data2 => {
+            if (data2.status === 'success') {
+                const situacao = data2.data;
+                document.getElementById('1_tipo').innerText = 'Tipo de cliente: ' + situacao.tipo_cliente;
+                document.getElementById('2_siti').innerText = 'Situação: ' + situacao.situacao;
+                document.getElementById('3_rep').innerText = 'Repertório: ' + situacao.repertorio;
+                document.getElementById('arg_primaria').value = situacao.argumentacao_primaria;
+                document.getElementById('proc_internos').value = situacao.processos_internos;
+                document.getElementById('pedido_desculpas').value = situacao.pedido_desculpas;
+                document.getElementById('cortes_falas').value = situacao.cortes_falas;
+                document.getElementById('arg_encerramento').value = situacao.argumentacao_encerramento;
+                document.getElementById('scripts_finalizacao').value = situacao.scripts_finalizacao;
+                document.getElementById('Modificar_args').style.display = "block";
+                document.getElementById('Salvar_args').style.display = "none";
+            } else {
+                alert(data2.message);
+                document.getElementById('Modificar_args').style.display = "none";
+                document.getElementById('arg_primaria').value = '';
+                document.getElementById('proc_internos').value = '';
+                document.getElementById('pedido_desculpas').value = '';
+                document.getElementById('cortes_falas').value = '';
+                document.getElementById('arg_encerramento').value = '';
+                document.getElementById('scripts_finalizacao').value = '';
+            }
+        })
+        .catch(error => {
+            console.error('Erro:', error);
+            alert('Erro ao carregar a argumentação.');
+            document.getElementById('Modificar_args').style.display = "none";
+            document.getElementById('Salvar_args').style.display = "none";
+            document.getElementById('arg_primaria').value = '';
+                document.getElementById('proc_internos').value = '';
+                document.getElementById('pedido_desculpas').value = '';
+                document.getElementById('cortes_falas').value = '';
+                document.getElementById('arg_encerramento').value = '';
+                document.getElementById('scripts_finalizacao').value = '';
+        });
+    }
+
+
+
+    document.getElementById('Modificar_args').addEventListener('click', function() {
+    ajustarArgumentação();
+
+    function ajustarArgumentação() {
+    const id = parseInt(document.getElementById('busca').value, 10);
+    if (isNaN(id)) {
+        alert('Por favor, insira um ID válido.');
+        return;
+    }
+
+            const id2 = parseInt(document.getElementById('busca').value,10);
+            const arg_primaria = document.getElementById('arg_primaria').value;
+            const proc_internos = document.getElementById('proc_internos').value;
+            const pedido_desculpas = document.getElementById('pedido_desculpas').value;
+            const cortes_falas = document.getElementById('cortes_falas').value;
+            const arg_encerramento = document.getElementById('arg_encerramento').value;
+            const scripts_finalizacao = document.getElementById('scripts_finalizacao').value;
+
+            const data = {
+                id: id2,
+                arg_primaria: arg_primaria,
+                proc_internos: proc_internos,
+                pedido_desculpas: pedido_desculpas,
+                cortes_falas: cortes_falas,
+                arg_encerramento: arg_encerramento,
+                scripts_finalizacao: scripts_finalizacao
+            };
+
+            fetch('http://localhost/Projeto%20HELP%20RESOLVE/update_argumento.php', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(data)
+            })
+            .then(response => response.json())
+            .then(result => {
+                if (result.status === 'success') {
+                    alert('Argumento atualizado com sucesso!');
+                    document.getElementById('arg_primaria').value = '';
+                    document.getElementById('proc_internos').value = '';
+                    document.getElementById('pedido_desculpas').value = '';
+                    document.getElementById('cortes_falas').value = '';
+                    document.getElementById('arg_encerramento').value = '';
+                    document.getElementById('scripts_finalizacao').value = '';
+                } else {
+                    alert('Erro ao atualizar argumento: ' + result.message);
+                }
+            })
+            .catch(error => {
+                console.error('Erro:', error);
+                alert('Erro ao atualizar argumento. Verifique o console para mais detalhes.');
+            });
+    }
+});
+
+
+
+  
+
+    </script>
+</body>
+</html>

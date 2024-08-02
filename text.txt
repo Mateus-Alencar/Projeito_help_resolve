@@ -1,0 +1,90 @@
+    const situacoes = [
+        {
+            tipo_cliente: 'Cliente Crítico',
+            situacao: 'Entrega atrasada',
+            repertorio: 'Muito Vocabulário',
+            argumentacao_primaria: 'Me desculpe pelo que aconteceu com a sua compra, eu sei que é muito frustrante quando criamos expectativas e depois somos desapontados, eu não queria que você tivesse vivenciado essa situação. Mas não se preocupe nós já…. (explique a resolução)',
+            processos_internos: 'Deixa eu te explicar com detalhes os próximos passos…',
+            pedido_desculpas: 'O que posso fazer para tornar a sua experiência melhor?',
+            cortes_falas: 'A divergência não foi intencional, te peço desculpas por essa situação, já estamos trabalhando fortemente para corrigir e evitar que aconteça novamente.',
+            argumentacao_encerramento: 'O nosso cliente é a nossa prioridade sempre e eu espero que com essas informações que eu te passei você tenha ficado mais tranquilo. ',
+            scripts_finalizacao: 'Foi um prazer te atender! No final da ligação  temos duas avaliações: a primeira se eu consegui te ajudar hoje e a segunda sobre a forma que eu te atendi. Conto muito com você!'
+        },
+        {
+            tipo_cliente: 'Cliente Crítico',
+            situacao: 'Consta entrega',
+            repertorio: 'Muito Vocabulário',
+            argumentacao_primaria: 'Sinto muito por qualquer chateação que você esteja sentindo. Por favor, me permita ajudar a resolver esse problema. ',
+            processos_internos: 'Deixa eu te explicar com detalhes os próximos passos…',
+            pedido_desculpas: 'A divergência não foi intencional, te peço desculpas por essa situação, já estamos trabalhando fortemente para corrigir e evitar que aconteça novamente',
+            cortes_falas: 'Antes de mais nada, eu te peço desculpas pela situação inconveniente relacionada a sua compra.  Quero que saiba que não é essa a experiência que gostaríamos de te oferecer e que estamos trabalhando para melhorar a sua jornada com a gente.',
+            argumentacao_encerramento: 'Obrigado por nos avisar sobre a sua chateação com o ocorrido. Estamos aqui para resolver o problema da melhor maneira possível.',
+            scripts_finalizacao: 'Fulano, foi bom falar com você! Agora vou te enviar para avaliar o meu atendimento, serão duas perguntas, a primeira sobre a resolução do seu caso e a segunda sobre como foi a nossa conversa, se fui atenciosa com você.'
+        },
+        {
+            tipo_cliente: 'Cliente Crítico',
+            situacao: 'Não recebeu restituição',
+            repertorio: 'Muito Vocabulário',
+            argumentacao_primaria: 'Não posso imaginar o quanto isso te chateou, eu peço desculpa, com sinceridade, saiba que não é essa experiência que gostaríamos que você passasse, sabemos que você merece o melhor! ',
+            processos_internos: 'Vou te contar quais são os próximos passos: ',
+            pedido_desculpas: 'Peço sinceras desculpas pelo atraso na restituição. Entendo o quanto isso é frustrante e não é a experiência que desejamos proporcionar.',
+            cortes_falas: 'Não posso imaginar o quanto isso te chateou, eu peço desculpa, com sinceridade, saiba que não é essa experiência que gostaríamos que você passasse, sabemos que você merece o melhor! ',
+            argumentacao_encerramento: 'Obrigado por nos dar a oportunidade de atendê-lo. Estamos sempre à disposição para ajudar em qualquer coisa que precisar.”',
+            scripts_finalizacao: 'Fulano, foi um prazer te atender! Agora vou te encaminhar para a avaliação do atendimento, é bem rapidinho. A primeira pergunta se eu consegui te ajudar nesse contato e a segunda é sobre a forma que te atendi. Você pode avaliar meu atendimento com a nota 1 a 5, me ajuda muito a nota 4 ou 5.'
+        },
+        {
+            tipo_cliente: 'Cliente Crítico',
+            situacao: 'Insucesso de entrega',
+            repertorio: 'Muito Vocabulário',
+            argumentacao_primaria: 'Antes de mais nada, eu te peço desculpas pela situação inconveniente relacionada a sua compra.  Quero que saiba que não é essa a experiência que gostaríamos de te oferecer e que estamos trabalhando para melhorar a sua jornada com a gente.',
+            processos_internos: 'Vou te contar quais são os próximos passos: ',
+            pedido_desculpas: 'Desculpe pelo transtorno causado pela falha na entrega. Estamos trabalhando para corrigir isso o mais rápido possível.',
+            cortes_falas: 'Entendo que a falha na entrega foi frustrante e peço desculpas por qualquer inconveniente causado.',
+            argumentacao_encerramento: 'Obrigado por escolher a nossa empresa. Estamos sempre à disposição para ajudar.',
+            scripts_finalizacao: 'Agora no final da ligação você será transferido para uma pesquisa sobre meu atendimento. Serão duas perguntas: Primeiro se considera que conseguimos te ajudar. Segundo, se você gostou de como te atendi hoje, a nota vai de 1 a 5, se puder participar é muito importante para mim.'
+        },
+        {
+            tipo_cliente: 'Cliente Crítico',
+            situacao: 'Fora do prazo 0',
+            repertorio: 'Muito Vocabulário',
+            argumentacao_primaria: 'Entendo sua frustração com o prazo de cancelamento. Gostaria de informá-lo que, de acordo com o artigo 49 do Código de Defesa do Consumidor, você tem o direito de desistir da compra em até 7 dias corridos após o recebimento do produto.',
+            processos_internos: '',
+            pedido_desculpas: 'Peço desculpas pelo inconveniente de ter que lidar com o cancelamento fora do prazo.',
+            cortes_falas: 'Compreendo sua frustração com o prazo e peço desculpas por qualquer inconveniente que isso possa ter causado.',
+            argumentacao_encerramento: 'Agradeço por nos dar a oportunidade de te atender. ',
+            scripts_finalizacao: 'Fulano, foi um prazer te atender! Agora vou te encaminhar para a avaliação do atendimento é bem rapidinho. A primeira pergunta se eu consegui te ajudar nesse contato e a segunda é sobre a forma que te atendi. Você pode avaliar meu atendimento com a nota 1 a 5, me ajuda muito a nota 4 ou 5.'
+        },
+        {
+            tipo_cliente: 'Cliente Crítico',
+            situacao: 'Prazo de cancelamento',
+            repertorio: 'Muito Vocabulário',
+            argumentacao_primaria: '',
+            processos_internos: 'Vou iniciar o processo de cancelamento agora e garantir que você receba a confirmação o mais rápido possível.',
+            pedido_desculpas: '',
+            cortes_falas: '',
+            argumentacao_encerramento: 'Agradeço por nos dar a oportunidade de te atender. ',
+            scripts_finalizacao: 'Fulano, foi um prazer te atender! Agora vou te encaminhar para a avaliação do atendimento é bem rapidinho. A primeira pergunta se eu consegui te ajudar nesse contato e a segunda é sobre a forma que te atendi. Você pode avaliar meu atendimento com a nota 1 a 5, me ajuda muito a nota 4 ou 5.'
+        },
+        {
+            tipo_cliente: 'Cliente Crítico',
+            situacao: 'Em rota de devolução',
+            repertorio: 'Muito Vocabulário',
+            argumentacao_primaria: 'Lamento que você esteja passando por essa situação. Entendo que não é agradável esperar pela devolução. Estamos acompanhando de perto para garantir que o processo de (troca/cancelamento) seja concluído o mais rápido possível.',
+            processos_internos: 'Vamos monitorar de perto o retorno do seu produto e garantir que a devolução seja processada assim que o recebermos.',
+            pedido_desculpas: 'Obrigado por nos dar feedback. Isso nos ajuda a oferecer um atendimento cada vez melhor. ',
+            cortes_falas: 'Quero que saiba que não é essa a experiência que gostaríamos de te oferecer e que estamos trabalhando para melhorar a sua jornada com a gente.',
+            argumentacao_encerramento: 'Obrigada por me dar a oportunidade de te ajudar! ',
+            scripts_finalizacao: 'Vou pedir uma gentileza, vou te transferir para uma pesquisa sobre o meu atendimento com duas pergunta, a primeira se o seu caso foi resolvido e tem a opções sim e  não, e a segunda se te atendi bem hoje, a nota vai de 1 a 5, se você se sentir confortável em me avaliar com o sim e a nota 5 é muito importante para mim.'
+        },
+        {
+            tipo_cliente: 'Cliente Crítico',
+            situacao: 'Cancelamento c/ NF emitida',
+            repertorio: 'Muito Vocabulário',
+            argumentacao_primaria: 'Peço desculpas pelo inconveniente. Entendo que o cancelamento de uma compra com nota fiscal emitida pode ser complicado, mas estamos aqui para ajudar a resolver isso. Vou acompanhar pessoalmente para garantir que tudo seja resolvido rapidamente, é so você recusar o produto na hora da entrega para ele voltar para o nosso estoque pela mesma transportadora.',
+            processos_internos: 'Vou acompanhar pessoalmente o processo de cancelamento para garantir que seja concluído o mais rápido possível.',
+            pedido_desculpas: 'Obrigado por nos dar feedback. Isso nos ajuda a oferecer um atendimento cada vez melhor. ',
+            cortes_falas: 'O nosso cliente é a nossa prioridade sempre e eu espero que com essas informações que eu te passei você tenha ficado mais tranquilo. ',
+            argumentacao_encerramento: 'É só você recusar o produto na hora da entrega para ele voltar para o nosso estoque pela mesma transportadora.',
+            scripts_finalizacao: 'Fulano, foi um prazer te atender! Agora vou te encaminhar para a avaliação do atendimento é bem rapidinho. A primeira pergunta se eu consegui te ajudar nesse contato e a segunda é sobre a forma que te atendi. Você pode avaliar meu atendimento com a nota 1 a 5, me ajuda muito a nota 4 ou 5.'
+        }
+    ];
